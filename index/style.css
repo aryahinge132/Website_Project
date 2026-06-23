@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section with Background Image */
+.hero{
+    height: 100vh;
+    background-image: url("https://www.shutterstock.com/shutterstock/videos/1111267475/thumb/1.jpg?ip=x480");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Dark Overlay */
+.overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(18, 18, 18, 0.445);
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: rgba(0,0,0,0.3);
+}
+
+.logo{
+    color: white;
+    font-size: 28px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin-left: 25px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    color: orange;
+}
+
+nav button{
+    padding: 10px 20px;
+    border: none;
+    background: orange;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Content */
+.content{
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+}
+
+.content h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.content p{
+    font-size: 20px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn1,
+.btn2{
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn1{
+    background: orange;
+    color: white;
+}
+
+.btn2{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+/* Stats Section */
+.stats{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 60px;
+}
+
+.stats div{
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 150px;
+}
+
+.stats h2{
+    color: orange;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,157 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+header{
+background:black;
+padding:20px;
+text-align:center;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+}
+
+.hero{
+height:400px;
+background:#222;
+text-align:center;
+padding-top:120px;
+}
+
+.hero h2{
+font-size:45px;
+color:orange;
+}
+
+.hero p{
+margin:20px;
+}
+
+button{
+padding:10px 20px;
+background:orange;
+border:none;
+cursor:pointer;
+}
+
+.services{
+padding:50px;
+text-align:center;
+}
+
+.box{
+display:inline-block;
+width:250px;
+background:#333;
+padding:20px;
+margin:10px;
+border-radius:10px;
+}
+
+footer{
+background:black;
+padding:15px;
+text-align:center;
+}
+
+.membership{
+text-align:center;
+padding:50px;
+background:#181818;
+}
+
+.membership h2{
+margin-bottom:30px;
+color:orange;
+}
+
+.plan{
+display:inline-block;
+width:250px;
+background:#333;
+padding:25px;
+margin:15px;
+border-radius:10px;
+}
+
+.plan h3{
+color:orange;
+margin-bottom:15px;
+}
+
+.plan p{
+margin:10px;
+}
+
+.plan:hover{
+transform:scale(1.05);
+transition:0.5s;
+}
+
+.trainers{
+text-align:center;
+padding:50px;
+background:#111;
+}
+
+.trainers h2{
+color:orange;
+margin-bottom:30px;
+}
+
+.trainer{
+display:inline-block;
+width:250px;
+background:#333;
+padding:20px;
+margin:15px;
+border-radius:10px;
+}
+
+.trainer img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.trainer h3{
+margin-top:15px;
+}
+
+.trainer p{
+margin-top:10px;
+color:lightgray;
+}
+
+.trainer:hover{
+transform:translateY(-8px);
+transition:0.4s;
+}
+
+.hero
+{
+    height: 80vh;
+    background: url("https://png.pngtree.com/thumb_back/fh260/background/20241224/pngtree-a-fully-equipped-gym-with-dumbbells-weight-machines-and-cardio-equipment-image_16843660.jpg"); ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
