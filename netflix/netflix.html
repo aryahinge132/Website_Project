@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Netflix Clone</title>
+<link rel="stylesheet" href="netflix.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">NETFLIX</div>
+
+<div class="menu">
+
+<a href="#movies">Movies</a>
+<a href="#categories">Categories</a>
+<a href="#about">About</a>
+
+<input id="search"
+type="text"
+placeholder="Search">
+
+<button onclick="loginOpen()">
+Sign In
+</button>
+
+</div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay">
+
+<h1>Unlimited movies, TV shows and more.</h1>
+
+<p>Watch anywhere. Cancel anytime.</p>
+
+<a href="#movies">
+<button class="watch">
+Explore
+</button>
+</a>
+
+</div>
+
+</section>
+
+
+<!-- LOGIN -->
+
+<div class="popup" id="popup">
+
+<div class="box">
+
+<span onclick="loginClose()">✕</span>
+
+<h2>Sign In</h2>
+
+<input type="email"
+placeholder="Email">
+
+<input type="password"
+placeholder="Password">
+
+<button>
+Login
+</button>
+
+</div>
+
+</div>
+
+
+<!-- MOVIES -->
+
+<section id="movies">
+
+<h2>Trending Now</h2>
+
+<div class="slider">
+
+<div class="movie">
+<img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba">
+<div class="play">▶ Play</div>
+</div>
+
+<div class="movie">
+<img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c">
+<div class="play">▶ Play</div>
+</div>
+
+<div class="movie">
+<img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1">
+<div class="play">▶ Play</div>
+</div>
+
+<div class="movie">
+<img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26">
+<div class="play">▶ Play</div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CATEGORY -->
+
+<section id="categories">
+
+<h2>Categories</h2>
+
+<div class="cat">
+
+<div>Action</div>
+<div>Drama</div>
+<div>Comedy</div>
+<div>Adventure</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Us</h2>
+
+<p>
+Netflix inspired website created using HTML CSS and JavaScript.
+Interactive UI with hover effects.
+</p>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Netflix Clone</p>
+
+</footer>
+
+
+<script>
+
+function loginOpen(){
+popup.style.display="flex";
+}
+
+function loginClose(){
+popup.style.display="none";
+}
+
+document
+.getElementById("search")
+.addEventListener(
+"keyup",
+function(){
+
+let value=
+this.value.toLowerCase();
+
+document
+.querySelectorAll(".movie")
+.forEach(card=>{
+
+card.style.display=
+card.innerText
+.toLowerCase()
+.includes(value)
+?
+"block"
+:
+"none";
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
